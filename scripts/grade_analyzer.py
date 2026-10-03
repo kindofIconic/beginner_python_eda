@@ -12,15 +12,16 @@ print(f"Total Students: {total_students}")
 # Find the highest and lowest scores automatically
 highest_score = max(scores)
 lowest_score = min(scores)
-print(f"Highest Score: {highest_score}")
-print(f"Lowest Score: {lowest_score}")
+print(f"Highest Score: {highest_score}%")
+print(f"Lowest Score: {lowest_score}%")
 
 # Calculate the class average
 class_average = sum(scores) / total_students
-print(f"Class Average: {class_average:.1f}")
+print(f"Class Average: {class_average:.1f}%")
 
 # Sort the grades
-sorted_scores = scores.sort(reverse=True)
+# Change Line 23 to this:
+sorted_scores = sorted(scores, reverse=True)
 print(f"Leaderboard (Highest to Lowest): {sorted_scores}")
 
 # Check if the class overall performed well
