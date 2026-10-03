@@ -20,7 +20,6 @@ class_average = sum(scores) / total_students
 print(f"Class Average: {class_average:.1f}%")
 
 # Sort the grades
-# Change Line 23 to this:
 sorted_scores = sorted(scores, reverse=True)
 print(f"Leaderboard (Highest to Lowest): {sorted_scores}")
 
